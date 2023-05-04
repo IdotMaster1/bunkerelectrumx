@@ -385,3 +385,8 @@ INFO:Prefetcher:new block height 681,599 hash 1e11220557494b16e787a418f5d02e86e7
 INFO:DB:flush #68 took 0.0s.  Height 681,599 txs: 698,592 (+1)
 INFO:BlockProcessor:processed 1 block size 0.00 MB in 0.0s
 INFO:MemPool:0 txs 0.00 MB touching 0 addresses
+INFO:MemPool:0 txs 0.00 MB touching 0 addresses
+INFO:MemPool:0 txs 0.00 MB touching 0 addresses
+INFO:MemPool:compact fee histogram: []
+INFO:MemPool:0 txs 0.00 MB touching 0 addresses
+INFO:MemPool:0 txs 0.00 MB touching 0 addresses
