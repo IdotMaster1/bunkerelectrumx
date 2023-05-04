@@ -546,6 +546,28 @@ class PrimeChainPowMixin:
         deserializer = cls.DESERIALIZER(block)
         return deserializer.read_header(cls.BASIC_HEADER_SIZE)
 
+class Bunkercoin(AuxPowMixin, Coin):
+    NAME = "Bunkercoin"
+    SHORTNAME = "BKC"
+    NET = "mainnet"
+    # Ok, so ElementX developers make their own abbreviation AND THEY DONT FUCKING DOCUMENT IT????
+    # EXT_PUBLIC_KEY
+    XPUB_VERBYTES = bytes.fromhex("0488c42e")
+    # EXT_SECRET_KEY
+    XPRV_VERBYTES = bytes.fromhex("0488e1f4")
+    # PUBKEY_ADDRESS
+    P2PKH_VERBYTE = bytes.fromhex("19")
+    # SCRIPT_ADDRESS
+    P2SH_VERBYTES = (bytes.fromhex("16"),)
+    # SECRET_KEY
+    WIF_BYTE = bytes.fromhex("9E")
+    GENESIS_HASH = ('405d1f6dda6196fc4fc4f2d28a8a199a'
+                    '6206149556cc30ddfaa0a26c04c6c9c2')
+    TX_COUNT = 477579
+    TX_COUNT_HEIGHT = 464413
+    TX_PER_BLOCK = 0.04
+    REORG_LIMIT = 2000
+    DESERIALIZER = lib_tx.DeserializerAuxPowSegWit
 
 class Verge(Coin):
     NAME = "Verge"
