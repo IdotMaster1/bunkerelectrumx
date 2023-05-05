@@ -14,4 +14,4 @@ docs/_build
 .mypy_cache/
 .idea/
 electrumx-test.log
-test-db/
+test-db/*

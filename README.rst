@@ -20,6 +20,8 @@ arbitrary addresses. The server can be exposed publicly, and joined to the publi
 of servers via peer discovery. As of May 2020, a significant chunk of the public
 Electrum server network runs ElectrumX.
 
+TO RUN USE runbkc.sh
+
 Documentation
 =============
 
